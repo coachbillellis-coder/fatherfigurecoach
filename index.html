@@ -102,14 +102,14 @@
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
   :root{
-    --black:#0C0C0C;
-    --panel:#161616;
-    --panel-2:#1E1D1B;
-    --line:#2C2A27;
-    --orange:#FF4A00;
-    --orange-hot:#FF6A1F;
-    --bone:#EDE9E2;
-    --ash:#B0AAA2;
+    --black:#F2EDE4;
+    --panel:#E6DDCB;
+    --panel-2:#DCCFB4;
+    --line:#C4B392;
+    --orange:#C6431A;
+    --orange-hot:#963210;
+    --bone:#2B2621;
+    --ash:#5C544B;
     --ease:cubic-bezier(.22,.61,.2,1);
   }
   *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
@@ -129,7 +129,7 @@
   h3{font-size:clamp(1.3rem,3vw,1.8rem);letter-spacing:.05em}
   p{max-width:62ch}
   a{color:var(--orange-hot)}
-  .skip-link{position:absolute;left:1rem;top:-4rem;z-index:100;background:var(--orange);color:var(--black);padding:.75rem 1.25rem;border-radius:0 0 .5rem .5rem;text-decoration:none;font-weight:700;transition:top .25s var(--ease)}
+  .skip-link{position:absolute;left:1rem;top:-4rem;z-index:100;background:var(--orange);color:#FFF7EC;padding:.75rem 1.25rem;border-radius:0 0 .5rem .5rem;text-decoration:none;font-weight:700;transition:top .25s var(--ease)}
   .skip-link:focus{top:0}
   :focus-visible{outline:3px solid var(--orange-hot);outline-offset:3px}
 
@@ -138,7 +138,7 @@
     position:fixed;inset:0 0 auto 0;z-index:50;
     display:flex;align-items:center;justify-content:space-between;
     padding:.6rem clamp(1rem,4vw,3rem);
-    background:rgba(12,12,12,.85);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
+    background:rgba(242,237,228,.85);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
     border-bottom:1px solid var(--line);
   }
   .brand{display:inline-flex;align-items:center;gap:.7rem;text-decoration:none;min-height:44px}
@@ -150,7 +150,7 @@
   nav ul{display:flex;gap:clamp(.4rem,2vw,1.6rem);list-style:none;white-space:nowrap}
   nav a{text-decoration:none;color:var(--ash);font-weight:600;font-size:.9rem;text-transform:uppercase;letter-spacing:.1em;display:inline-flex;align-items:center;min-height:44px;padding:.2rem .35rem;border-bottom:2px solid transparent;transition:color .3s var(--ease),border-color .3s var(--ease)}
   nav a:hover,nav a:focus-visible{color:var(--bone);border-bottom-color:var(--orange)}
-  .nav-cta{background:var(--orange);color:var(--black) !important;padding:.5rem 1.1rem !important;border-bottom:none !important;clip-path:polygon(8px 0,100% 0,calc(100% - 8px) 100%,0 100%)}
+  .nav-cta{background:var(--orange);color:#FFF7EC !important;padding:.5rem 1.1rem !important;border-bottom:none !important;clip-path:polygon(8px 0,100% 0,calc(100% - 8px) 100%,0 100%)}
   .nav-cta:hover{background:var(--orange-hot)}
 
   /* Language toggle */
@@ -172,16 +172,16 @@
 
   /* Hero */
   .hero{position:relative;height:210vh}
-  .hero-sticky{position:sticky;top:0;height:100vh;overflow:hidden;display:grid;place-items:center;background:radial-gradient(80% 60% at 50% 110%, #2A1104 0%, var(--black) 60%)}
+  .hero-sticky{position:sticky;top:0;height:100vh;overflow:hidden;display:grid;place-items:center;background:radial-gradient(80% 60% at 50% 110%, #F3D2AC 0%, var(--black) 60%)}
   .scene-canvas{position:absolute;inset:0;width:100%;height:100%;display:block}
   .hero-copy{position:relative;z-index:2;text-align:center;padding:0 1.25rem;max-width:60rem}
-  .hero-copy img{width:clamp(110px,16vw,170px);height:auto;margin-bottom:1.2rem;filter:drop-shadow(0 0 30px rgba(255,74,0,.45))}
+  .hero-copy img{width:clamp(110px,16vw,170px);height:auto;margin-bottom:1.2rem;filter:drop-shadow(0 0 30px rgba(198,67,26,.45))}
   .kicker{display:inline-block;font-weight:700;font-size:.85rem;letter-spacing:.35em;text-transform:uppercase;color:var(--orange-hot);margin-bottom:.8rem}
   .hero-copy h1 em{font-style:normal;color:var(--orange)}
   .hero-copy p{margin:1.4rem auto 2.2rem;font-size:clamp(1.05rem,2.3vw,1.3rem);color:var(--ash);max-width:44ch}
   .btn{
     display:inline-flex;align-items:center;justify-content:center;min-height:52px;
-    background:var(--orange);color:var(--black);padding:.9rem 2.4rem;
+    background:var(--orange);color:#FFF7EC;padding:.9rem 2.4rem;
     text-decoration:none;font-weight:700;font-size:1rem;text-transform:uppercase;letter-spacing:.1em;border:none;cursor:pointer;
     clip-path:polygon(12px 0,100% 0,calc(100% - 12px) 100%,0 100%);
     transition:background .3s var(--ease),transform .3s var(--ease);
@@ -210,11 +210,11 @@
   .stat span{color:var(--ash);font-size:.95rem}
 
   /* Metabolic Scan */
-  .scan{background:linear-gradient(135deg,var(--panel-2) 0%,#170801 100%);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .scan{background:linear-gradient(135deg,var(--panel-2) 0%,#F7F1E2 100%);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
   .scan .wrap{display:grid;gap:2.5rem;align-items:center}
   @media (min-width:900px){.scan .wrap{grid-template-columns:1.05fr 1fr}}
   .scan h2 span{color:var(--orange)}
-  .scan .fine{font-size:.8rem;color:#8B857D;margin-top:1rem}
+  .scan .fine{font-size:.8rem;color:var(--ash);margin-top:1rem}
   .metrics{display:grid;gap:1px;background:var(--line);border:1px solid var(--line)}
   @media (min-width:520px){.metrics{grid-template-columns:1fr 1fr}}
   .metric{background:var(--black);padding:1.6rem 1.4rem;transition:background .4s var(--ease)}
@@ -253,7 +253,7 @@
   .story .creds{margin-top:1.75rem;font-size:.85rem;letter-spacing:.12em;text-transform:uppercase;color:var(--orange-hot);font-weight:700}
 
   /* Blueprint */
-  .blueprint{background:linear-gradient(135deg,#1E0A00 0%,var(--panel) 55%)}
+  .blueprint{background:linear-gradient(135deg,#F7F1E2 0%,var(--panel) 55%)}
   .blueprint .wrap{display:grid;gap:2.5rem;align-items:center}
   @media (min-width:900px){.blueprint .wrap{grid-template-columns:1.2fr 1fr}}
   .blueprint h2 span{color:var(--orange)}
@@ -324,7 +324,7 @@
   .shot:hover img{transform:scale(1.02)}
   .shot figcaption{padding:.9rem 1.1rem;font-size:.88rem;color:var(--ash);border-top:1px solid var(--line)}
   .shot figcaption strong{color:var(--orange-hot);text-transform:uppercase;letter-spacing:.1em;font-size:.8rem;display:block;margin-bottom:.15rem}
-  .gallery-note{margin-top:1.25rem;font-size:.8rem;color:#8B857D;max-width:none}
+  .gallery-note{margin-top:1.25rem;font-size:.8rem;color:var(--ash);max-width:none}
 
   /* FAQ */
   .faq .wrap{max-width:52rem}
@@ -343,7 +343,7 @@
   .field label{font-weight:600;font-size:.92rem;color:var(--bone)}
   .field input,.field textarea{font:inherit;padding:.8rem 1rem;border:1px solid var(--line);background:var(--panel);color:var(--bone);width:100%}
   .field input:focus,.field textarea:focus{border-color:var(--orange);outline:none}
-  .error-msg{color:#FF8A5C;font-size:.85rem;font-weight:600;min-height:1.2em}
+  .error-msg{color:#B23A12;font-size:.85rem;font-weight:600;min-height:1.2em}
   .form-status{margin-top:1rem;min-height:2rem}
   .confirm{display:flex;align-items:center;gap:.8rem;background:var(--panel);border:1px solid var(--orange);padding:1rem 1.25rem;color:var(--bone);font-weight:600;animation:rise .6s var(--ease)}
   @keyframes rise{from{opacity:0;transform:translateY(.8rem)}to{opacity:1;transform:none}}
@@ -353,18 +353,18 @@
   @keyframes draw{to{stroke-dashoffset:0}}
   @media (prefers-reduced-motion:reduce){.checkmark circle,.checkmark path{animation:none;stroke-dashoffset:0}}
   .cal-panel{background:var(--panel);border:1px solid var(--line);padding:.75rem}
-  .cal-panel iframe{width:100%;height:740px;border:0;background:var(--bone)}
+  .cal-panel iframe{width:100%;height:740px;border:0;background:var(--black)}
   .cal-panel p{font-size:.85rem;color:var(--ash);padding:.6rem .4rem 0;text-align:center}
 
   /* Footer */
-  footer.site{background:#080808;border-top:1px solid var(--line);color:var(--ash);padding:3rem clamp(1.25rem,6vw,4rem) 2rem;font-size:.9rem}
+  footer.site{background:var(--panel);border-top:1px solid var(--line);color:var(--ash);padding:3rem clamp(1.25rem,6vw,4rem) 2rem;font-size:.9rem}
   footer.site .wrap{display:grid;gap:2rem}
   @media (min-width:760px){footer.site .wrap{grid-template-columns:2fr 1fr 1fr}}
   footer.site h3{color:var(--bone);font-size:1.1rem;margin-bottom:.6rem}
   footer.site ul{list-style:none}
   footer.site a{color:var(--ash);text-decoration:none;display:inline-flex;align-items:center;min-height:44px}
   footer.site a:hover,footer.site a:focus-visible{color:var(--orange-hot);text-decoration:underline}
-  .fineprint{grid-column:1/-1;border-top:1px solid var(--line);padding-top:1.25rem;font-size:.8rem;color:#8B857D}
+  .fineprint{grid-column:1/-1;border-top:1px solid var(--line);padding-top:1.25rem;font-size:.8rem;color:var(--ash)}
   .fineprint p{max-width:none;margin-bottom:.6rem}
 </style>
 </head>
@@ -865,7 +865,7 @@ document.addEventListener("DOMContentLoaded", function(){
   /* Scene 1 — Hero: rising embers + wireframe shield */
   makeScene("scene-hero", function(api){
     var s = api.scene, cam = api.camera;
-    s.fog = new THREE.FogExp2(0x0C0C0C, .028);
+    s.fog = new THREE.FogExp2(0xF2EDE4, .028);
     cam.position.set(0,0,16);
 
     var N = 1400, g = new THREE.BufferGeometry();
@@ -877,14 +877,14 @@ document.addEventListener("DOMContentLoaded", function(){
       vel[i] = .5 + Math.random()*1.6;
     }
     g.setAttribute("position", new THREE.BufferAttribute(pos,3));
-    var embers = new THREE.Points(g, new THREE.PointsMaterial({color:0xFF5A14,size:.14,transparent:true,opacity:.85}));
+    var embers = new THREE.Points(g, new THREE.PointsMaterial({color:0xC6431A,size:.14,transparent:true,opacity:.85}));
     s.add(embers);
-    var embers2 = new THREE.Points(g.clone(), new THREE.PointsMaterial({color:0xFFB37A,size:.07,transparent:true,opacity:.5}));
+    var embers2 = new THREE.Points(g.clone(), new THREE.PointsMaterial({color:0x963210,size:.07,transparent:true,opacity:.5}));
     s.add(embers2);
 
     var shield = new THREE.Mesh(
       new THREE.IcosahedronGeometry(4.4,1),
-      new THREE.MeshBasicMaterial({color:0xFF4A00, wireframe:true, transparent:true, opacity:.16})
+      new THREE.MeshBasicMaterial({color:0xC6431A, wireframe:true, transparent:true, opacity:.3})
     );
     s.add(shield);
 
@@ -909,7 +909,7 @@ document.addEventListener("DOMContentLoaded", function(){
   /* Scene 2 — The Forge: molten knot under rim light */
   makeScene("scene-forge", function(api){
     var s = api.scene, cam = api.camera;
-    s.fog = new THREE.Fog(0x0C0C0C, 8, 40);
+    s.fog = new THREE.Fog(0xF2EDE4, 8, 40);
     cam.position.set(0,0,11);
 
     var knot = new THREE.Mesh(
@@ -917,13 +917,13 @@ document.addEventListener("DOMContentLoaded", function(){
       new THREE.MeshStandardMaterial({color:0x1C1A18, roughness:.35, metalness:.85})
     );
     s.add(knot);
-    var glow = new THREE.PointLight(0xFF4A00, 2.4, 40);
+    var glow = new THREE.PointLight(0xE8571E, 2.4, 40);
     glow.position.set(-6,3,6);
     s.add(glow);
     var cool = new THREE.PointLight(0x8CA3B5, .5, 40);
     cool.position.set(7,-4,5);
     s.add(cool);
-    s.add(new THREE.AmbientLight(0x14100C, 2));
+    s.add(new THREE.AmbientLight(0x2A241C, 1.6));
 
     var sparks = new THREE.Points(function(){
       var g = new THREE.BufferGeometry(), M=350, a=new Float32Array(M*3);
@@ -933,7 +933,7 @@ document.addEventListener("DOMContentLoaded", function(){
       }
       g.setAttribute("position",new THREE.BufferAttribute(a,3));
       return g;
-    }(), new THREE.PointsMaterial({color:0xFF6A1F,size:.09,transparent:true,opacity:.8}));
+    }(), new THREE.PointsMaterial({color:0x963210,size:.09,transparent:true,opacity:.8}));
     s.add(sparks);
 
     api.update = function(t){
@@ -951,7 +951,7 @@ document.addEventListener("DOMContentLoaded", function(){
   /* Scene 3 — The Climb: steel steps rising */
   makeScene("scene-climb", function(api){
     var s = api.scene, cam = api.camera;
-    s.fog = new THREE.Fog(0x0C0C0C, 10, 60);
+    s.fog = new THREE.Fog(0xF2EDE4, 10, 60);
     cam.position.set(0,4,20);
 
     var mat = new THREE.MeshStandardMaterial({color:0x232019, roughness:.5, metalness:.6});
@@ -965,13 +965,13 @@ document.addEventListener("DOMContentLoaded", function(){
     }
     var beacon = new THREE.Mesh(
       new THREE.OctahedronGeometry(.9,0),
-      new THREE.MeshBasicMaterial({color:0xFF4A00})
+      new THREE.MeshBasicMaterial({color:0xC6431A})
     );
     beacon.position.set(0,-6,-N*1.1);
     s.add(beacon);
 
-    s.add(new THREE.HemisphereLight(0x3A3630,0x0C0C0C,1.1));
-    var key = new THREE.DirectionalLight(0xFF6A1F,.9);
+    s.add(new THREE.HemisphereLight(0xF2EDE4,0x4A4136,1.1));
+    var key = new THREE.DirectionalLight(0xE8571E,.9);
     key.position.set(-10,15,8);
     s.add(key);
 
